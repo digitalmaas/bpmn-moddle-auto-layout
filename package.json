@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/bpmn-io/bpmn-js-auto-layout#readme",
   "dependencies": {
-    "bpmn-moddle": "^0.12.2",
+    "bpmn-moddle": "^0.12.4",
     "lodash": "^3.0.1"
   }
 }
