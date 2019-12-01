@@ -56,8 +56,6 @@ var xmlWithoutDi = `
     </bpmn:subProcess>
   </bpmn:process>
 </bpmn:definitions>
-`
-
 var autoLayout = new AutoLayout()
 const fs = require('fs')
 
