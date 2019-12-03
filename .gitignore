@@ -1,2 +1,4 @@
 node_modules/
 test/generated
+test.bpmn
+test.js
