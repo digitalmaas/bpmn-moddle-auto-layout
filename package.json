@@ -1,14 +1,16 @@
 {
-  "name": "bpmn-moddle-auto-layout",
-  "version": "1.0.0",
-  "description": "layouting bpmn-processes without di",
+  "name": "bpmn-auto-layout",
+  "version": "0.1.0",
+  "description": "Layout BPMN diagrams, generating missing DI information",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "all": "run-s lint test",
+    "lint": "eslint .",
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bpmn-io/bpmn-js-auto-layout.git"
+    "url": "git+https://github.com/bpmn-io/bpmn-auto-layout.git"
   },
   "keywords": [
     "bpmn",
@@ -17,11 +19,17 @@
   "author": "hoferch91",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bpmn-io/bpmn-js-auto-layout/issues"
+    "url": "https://github.com/bpmn-io/bpmn-auto-layout/issues"
   },
-  "homepage": "https://github.com/bpmn-io/bpmn-js-auto-layout#readme",
+  "homepage": "https://github.com/bpmn-io/bpmn-auto-layout#readme",
   "dependencies": {
-    "bpmn-moddle": "^0.12.4",
-    "lodash": "^3.0.1"
+    "bpmn-moddle": "^6.0.0",
+    "min-dash": "^3.5.2"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-plugin-bpmn-io": "^0.10.0",
+    "mocha": "^6.2.2",
+    "npm-run-all": "^4.1.5"
   }
 }
