@@ -62,7 +62,6 @@ var autoLayout = new AutoLayout();
 
 var fs = require('fs').promises;
 
-
 (async () => {
 
   var layoutedDiagramXML = autoLayout.layoutProcess(diagramXML);
