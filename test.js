@@ -9,20 +9,18 @@ fs.readFile('./test.bpmn', 'utf8', function(err, inBpmnXml) {
     console.error(err);
     return;
   }
-  autoLayout.layoutProcess(inBpmnXml, function(error, outBpmnXml) {
-    if (error) {
-      console.error(error);
-      return;
-    }
+  return autoLayout.layoutProcess(inBpmnXml)
+    .then(outBpmnXml => {
+      console.log('outBpmnXml');
 
-    // write output
-    fs.writeFile('./output.bpmn', outBpmnXml, function(err, done) {
-      if (err) {
-        console.error(err);
-        return;
-      }
+      // write output
+      fs.writeFile('./output.bpmn', outBpmnXml, function(err, done) {
+        if (err) {
+          console.error(err);
+          return;
+        }
+      });
     });
-  });
 });
 
 
