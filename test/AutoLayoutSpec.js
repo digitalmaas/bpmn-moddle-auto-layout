@@ -52,6 +52,10 @@ describe('bpmn-auto-layout', function() {
       await test('simple.bpmn');
     });
 
+    it('multiple start subprocess', async function() {
+      await test('multiple-start-subprocess.bpmn');
+    });
+
     it('vertical padding', async function() {
       await test('vertical-padding.bpmn');
     });
