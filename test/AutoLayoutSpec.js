@@ -76,15 +76,15 @@ describe('bpmn-auto-layout', function() {
       await test('nested-sub-processes.bpmn');
     });
 
-    it('collaboration and message flows', async function() {
+    it.skip('collaboration and message flows', async function() {
       await test('collaboration-message-flows.bpmn');
     });
 
-    it('boundary events', async function() {
+    it.skip('boundary events', async function() {
       await test('boundary-events.bpmn');
     });
 
-    it('event sub-process', async function() {
+    it.skip('event sub-process', async function() {
       await test('event-sub-process.bpmn');
     });
 
